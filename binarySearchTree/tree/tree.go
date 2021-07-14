@@ -10,5 +10,9 @@ func (t *Tree) Insert(node *Node) {
 		return
 	}
 
-	t.Root.Insert(node)
+	t.Root.insert(node)
+}
+
+func (t *Tree) Search(value int) bool {
+	return t.Root.search(value)
 }
