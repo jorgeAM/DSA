@@ -23,5 +23,5 @@ func main() {
 	t.Insert(n5)
 	t.Insert(n6)
 
-	fmt.Println(t.Search(-10))
+	fmt.Println(t.Search(4))
 }

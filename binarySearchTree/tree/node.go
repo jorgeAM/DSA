@@ -23,17 +23,13 @@ func (n *Node) insert(node *Node) {
 }
 
 func (n *Node) search(value int) bool {
-	if n.Value < value {
-		if n.Right == nil {
-			return false
-		}
+	if n == nil {
+		return false
+	}
 
+	if n.Value < value {
 		return n.Right.search(value)
 	} else if n.Value > value {
-		if n.Left == nil {
-			return false
-		}
-
 		return n.Left.search(value)
 	} else {
 		return true
