@@ -32,3 +32,27 @@ func (b *Bucket) search(key string) bool {
 
 	return false
 }
+
+func (b *Bucket) delete(key string) {
+	if b.head == nil {
+		return
+	}
+
+	if b.head.key == key {
+		b.head = b.head.next
+
+		return
+	}
+
+	prevNode := b.head
+
+	for prevNode.next != nil {
+		if prevNode.next.key == key {
+			prevNode.next = prevNode.next.next
+
+			return
+		}
+
+		prevNode = prevNode.next
+	}
+}

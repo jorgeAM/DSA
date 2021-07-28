@@ -16,4 +16,8 @@ func main() {
 	hashTable.Insert("Panchito")
 
 	fmt.Println(hashTable.Search("Panchito"))
+
+	hashTable.Delete("Jorge")
+
+	fmt.Println(hashTable)
 }

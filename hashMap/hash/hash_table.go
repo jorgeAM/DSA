@@ -37,3 +37,9 @@ func (h *HashTable) Search(key string) bool {
 
 	return h.array[hash].search(key)
 }
+
+func (h *HashTable) Delete(key string) {
+	hash := h.hash(key)
+
+	h.array[hash].delete(key)
+}
