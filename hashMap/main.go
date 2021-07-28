@@ -15,5 +15,5 @@ func main() {
 	hashTable.Insert("Basti")
 	hashTable.Insert("Panchito")
 
-	fmt.Println(hashTable)
+	fmt.Println(hashTable.Search("Panchito"))
 }

@@ -14,3 +14,21 @@ func (b *Bucket) insert(key string) {
 	node.next = b.head
 	b.head = node
 }
+
+func (b *Bucket) search(key string) bool {
+	if b.head == nil {
+		return false
+	}
+
+	current := b.head
+
+	for current != nil {
+		if current.key == key {
+			return true
+		}
+
+		current = current.next
+	}
+
+	return false
+}

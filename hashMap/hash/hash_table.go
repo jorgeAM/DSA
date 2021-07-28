@@ -31,3 +31,9 @@ func (h *HashTable) Insert(key string) {
 
 	h.array[hash].insert(key)
 }
+
+func (h *HashTable) Search(key string) bool {
+	hash := h.hash(key)
+
+	return h.array[hash].search(key)
+}
