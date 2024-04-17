@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/structures/queues/queue"
+	"github.com/jorgeAM/DSA/queues/queue"
 )
 
 func main() {

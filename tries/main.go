@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/structures/tries/trie"
+	"github.com/jorgeAM/DSA/tries/trie"
 )
 
 func main() {

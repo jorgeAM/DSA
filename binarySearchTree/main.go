@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/structures/binarySearchTree/tree"
+	"github.com/jorgeAM/DSA/binarySearchTree/tree"
 )
 
 func main() {

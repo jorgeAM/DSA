@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/structures/stacks/stack"
+	"github.com/jorgeAM/DSA/stacks/stack"
 )
 
 func main() {

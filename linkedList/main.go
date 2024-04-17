@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/jorgeAM/structures/linkedList/list"
+	"github.com/jorgeAM/DSA/linkedList/list"
 )
 
 func main() {

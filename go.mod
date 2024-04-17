@@ -1,3 +1,3 @@
-module github.com/jorgeAM/structures
+module github.com/jorgeAM/DSA
 
 go 1.16

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/structures/hashMap/hash"
+	"github.com/jorgeAM/DSA/hashMap/hash"
 )
 
 func main() {
