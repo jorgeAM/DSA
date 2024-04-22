@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	multiplepointer "github.com/jorgeAM/DSA/patterns/multiple_pointer"
+	binarysearch "github.com/jorgeAM/DSA/patterns/binary_search"
 )
 
 func main() {
-	fmt.Println(multiplepointer.IsSubsequence("hello", "hello world"))
+	fmt.Println(binarysearch.FindNumber([]int{1, 2, 3, 4, 5}, 2))
 }
