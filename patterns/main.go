@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	frequencycounter "github.com/jorgeAM/DSA/patterns/frequency_counter"
+	multiplepointer "github.com/jorgeAM/DSA/patterns/multiple_pointer"
 )
 
 func main() {
-	fmt.Println(frequencycounter.ValidAnagram("aab", "aba"))
+	fmt.Println(multiplepointer.IsSubsequence("hello", "hello world"))
 }
