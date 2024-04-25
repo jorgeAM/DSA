@@ -1,12 +1,18 @@
 package queue
 
+type Node struct {
+	Value int
+	Next  *Node
+}
+
 type Queue struct {
 	First  *Node
 	Last   *Node
 	Length int
 }
 
-func (q *Queue) Push(node *Node) int {
+func (q *Queue) Push(value int) int {
+	node := &Node{Value: value}
 	if q.First == nil {
 		q.First = node
 	}
