@@ -1,12 +1,18 @@
 package stack
 
+type Node struct {
+	Value int
+	Next  *Node
+}
+
 type Stack struct {
 	First  *Node
 	Last   *Node
 	Length int
 }
 
-func (s *Stack) Push(node *Node) int {
+func (s *Stack) Push(value int) int {
+	node := &Node{Value: value}
 	if s.First == nil {
 		s.First = node
 	}
