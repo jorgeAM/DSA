@@ -3,17 +3,19 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/DSA/ds/list"
+	"github.com/jorgeAM/DSA/ds/tree"
 )
 
 func main() {
-	list := list.SinglyLinkedList{}
-	list.Push(1)
-	list.Push(2)
-	list.Push(3)
-	list.Push(4)
-	list.Push(5)
+	tree := tree.BST{}
+	tree.Insert(1)
+	tree.Insert(4)
+	tree.Insert(-3)
+	tree.Insert(10)
+	tree.Insert(120)
 
-	list.Reverse()
-	fmt.Println(list)
+	fmt.Println(tree)
+	tree.Reverse()
+
+	fmt.Println(tree)
 }
