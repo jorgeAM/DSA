@@ -108,3 +108,27 @@ func (t *BST) BFS() []int {
 
 	return viewed
 }
+
+func (t *BST) DFSPreOrder() []int {
+	data := make([]int, 0)
+
+	curr := t.Root
+
+	t.preOrderHelper(curr, &data)
+
+	return data
+}
+
+func (t *BST) preOrderHelper(node *Node, store *[]int) {
+	if node != nil {
+		*store = append(*store, node.Value)
+	}
+
+	if node.Left != nil {
+		t.preOrderHelper(node.Left, store)
+	}
+
+	if node.Right != nil {
+		t.preOrderHelper(node.Right, store)
+	}
+}
