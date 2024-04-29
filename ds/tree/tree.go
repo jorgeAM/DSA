@@ -132,3 +132,27 @@ func (t *BST) preOrderHelper(node *Node, store *[]int) {
 		t.preOrderHelper(node.Right, store)
 	}
 }
+
+func (t *BST) DFSPostOrder() []int {
+	data := make([]int, 0)
+
+	curr := t.Root
+
+	t.postOrderHelper(curr, &data)
+
+	return data
+}
+
+func (t *BST) postOrderHelper(node *Node, store *[]int) {
+	if node.Left != nil {
+		t.postOrderHelper(node.Left, store)
+	}
+
+	if node.Right != nil {
+		t.postOrderHelper(node.Right, store)
+	}
+
+	if node != nil {
+		*store = append(*store, node.Value)
+	}
+}
