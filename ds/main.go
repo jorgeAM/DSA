@@ -8,14 +8,12 @@ import (
 
 func main() {
 	tree := tree.BST{}
-	tree.Insert(1)
-	tree.Insert(4)
-	tree.Insert(-3)
 	tree.Insert(10)
-	tree.Insert(120)
+	tree.Insert(6)
+	tree.Insert(15)
+	tree.Insert(3)
+	tree.Insert(8)
+	tree.Insert(20)
 
-	fmt.Println(tree)
-	tree.Reverse()
-
-	fmt.Println(tree)
+	fmt.Println(tree.BFS())
 }

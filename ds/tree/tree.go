@@ -80,3 +80,31 @@ func (t *BST) Search(value int) bool {
 func (t *BST) Reverse() {
 	t.Root.Reverse()
 }
+
+func (t *BST) BFS() []int {
+	queue := make([]*Node, 0)
+	viewed := make([]int, 0)
+	var node *Node
+
+	if t.Root == nil {
+		return viewed
+	}
+
+	queue = append(queue, t.Root)
+
+	for len(queue) > 0 {
+		node = queue[0]
+		queue = queue[1:]
+		viewed = append(viewed, node.Value)
+
+		if node.Left != nil {
+			queue = append(queue, node.Left)
+		}
+
+		if node.Right != nil {
+			queue = append(queue, node.Right)
+		}
+	}
+
+	return viewed
+}
