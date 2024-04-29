@@ -15,5 +15,5 @@ func main() {
 	tree.Insert(8)
 	tree.Insert(20)
 
-	fmt.Println(tree.DFSPostOrder())
+	fmt.Println(tree.DFSInOrder())
 }

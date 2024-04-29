@@ -156,3 +156,27 @@ func (t *BST) postOrderHelper(node *Node, store *[]int) {
 		*store = append(*store, node.Value)
 	}
 }
+
+func (t *BST) DFSInOrder() []int {
+	data := make([]int, 0)
+
+	curr := t.Root
+
+	t.inOrderHelper(curr, &data)
+
+	return data
+}
+
+func (t *BST) inOrderHelper(node *Node, store *[]int) {
+	if node.Left != nil {
+		t.inOrderHelper(node.Left, store)
+	}
+
+	if node != nil {
+		*store = append(*store, node.Value)
+	}
+
+	if node.Right != nil {
+		t.inOrderHelper(node.Right, store)
+	}
+}
