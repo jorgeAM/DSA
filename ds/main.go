@@ -3,17 +3,19 @@ package main
 import (
 	"fmt"
 
-	"github.com/jorgeAM/DSA/ds/tree"
+	"github.com/jorgeAM/DSA/ds/binary_heap"
 )
 
 func main() {
-	tree := tree.BST{}
-	tree.Insert(10)
-	tree.Insert(6)
-	tree.Insert(15)
-	tree.Insert(3)
-	tree.Insert(8)
-	tree.Insert(20)
+	heap := binary_heap.MaxBinaryHeap{}
+	heap.Insert(41)
+	heap.Insert(39)
+	heap.Insert(33)
+	heap.Insert(18)
+	heap.Insert(27)
+	heap.Insert(12)
 
-	fmt.Println(tree.DFSInOrder())
+	fmt.Println(heap.Values)
+	heap.Insert(55)
+	fmt.Println(heap.Values)
 }
