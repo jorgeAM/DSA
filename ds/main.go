@@ -14,8 +14,16 @@ func main() {
 	heap.Insert(18)
 	heap.Insert(27)
 	heap.Insert(12)
-
-	fmt.Println(heap.Values)
 	heap.Insert(55)
+	fmt.Println(heap.Values)
+
+	heap.ExtractMax()
+	heap.ExtractMax()
+	heap.ExtractMax()
+	heap.ExtractMax()
+	heap.ExtractMax()
+	heap.ExtractMax()
+	heap.ExtractMax()
+	heap.ExtractMax()
 	fmt.Println(heap.Values)
 }
